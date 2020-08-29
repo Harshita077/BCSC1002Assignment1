@@ -26,4 +26,8 @@ public class Book {
 
     }
 
+    // GETTER METHOD FOR THE FIELDS
+    public String getBookName(){
+        return BookName;
+    }
 }

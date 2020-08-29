@@ -6,5 +6,11 @@
  * */
 package definitions;
 
+import java.util.Objects;
+
 public class Book {
+    private String BookName;
+    private String BookAuthour;
+    private String ISBNnoofBooks;
+
 }

@@ -10,49 +10,48 @@ import java.util.Objects;
 
 public class Book{
 
-    private String BookName;
-    private String BookAuthour;
-    private String ISBNnoOfBook;
+    private String bookName;
+    private String bookAuthor;
+    private String iSBNnoOfBook;
 
     public Book(){
-        this.BookName="The Blue Umbrella";
-        this.BookAuthour="Ruskin Bond";
-        this.ISBNnoOfBook="45865250200021";
+        this.bookName="The Blue Umbrella";
+        this.bookAuthor="Ruskin Bond";
+        this.iSBNnoOfBook="45865250200021";
     }
 
-    public Book(String BookName,String BookAuthour,String ISBNnoOfBook){
-        this.BookName=BookName;
-        this.BookAuthour=BookAuthour;
-        this.ISBNnoOfBook=ISBNnoOfBook;
+    public Book(String bookName,String bookAuthor,String iSBNnoOfBook){
+        this.bookName=bookName;
+        this.bookAuthor=bookAuthor;
+        this.iSBNnoOfBook=iSBNnoOfBook;
     }
 
     public String getBookName() {
-        return BookName;
+        return bookName;
     }
 
-    public void setBookName(String BookName) {
-        this.BookName=BookName;
+    public void setBookName(String bookName) {
+        this.bookName=bookName;
     }
 
-    public String getBookAuthour() {
-        return BookAuthour;
+    public String getbookAuthor() {
+        return bookAuthor;
     }
 
-    public void setBookAuthour(String bookAuthour) {
-        this.BookAuthour = bookAuthour;
+    public void setBookAuthor(String bookAuthor) {
+        this.bookAuthor = bookAuthor;
     }
 
-    public String getISBNnoOfBook() {
-        return ISBNnoOfBook;
+    public String getiSBNnoOfBook() {
+        return iSBNnoOfBook;
     }
 
-    public void setISBNnoOfBook(String ISBNnoOfBook) {
-        this.ISBNnoOfBook = ISBNnoOfBook;
+    public void setISBNnoOfBook(String iSBNnoOfBook) {
+        this.iSBNnoOfBook = iSBNnoOfBook;
     }
 
     public String toString(){
-        return "BookName:"+" "this.BookName + "\n" +"Authour of Book:"+" "this.BookAuthour()
-            + "\n" + "ISBN code of the Book"+ " +this.ISBNnoOfBook" + ".";
+        return "BookName:"+" " + this.bookName  +  "\n" + "Author of Book:" + " "+ getbookAuthor() + "\n" + "ISBN code of the Book" + " "+ this.iSBNnoOfBook + ".";
     }
 }
 

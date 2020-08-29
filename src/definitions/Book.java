@@ -9,30 +9,5 @@ package definitions;
 import java.util.Objects;
 
 public class Book{
-    private String BookName;
-    private String BookAuthour;
-    private String ISBNnoofBook;
 
-    public Book(){
-        this.BookName="The Blue Umbrella";
-        this.BookAuthour="Ruskin Bond";
-        this.ISBNnoofBook="52502045860021";
-
-    }
-    public Book(String BookName,String BookAuthour,String ISBNnoofBook){
-        this.BookName=BookName;
-        this.BookAuthour= BookAuthour;
-        this.ISBNnoofBook=ISBNnoofBook;
-
-    }
-
-    public String getBookName(){
-        return BookName;
-    }
-    public void setBookName(String BookName){
-        this.BookName=BookName;
-    }
-
-    public String
 }
-

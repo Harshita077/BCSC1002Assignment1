@@ -49,6 +49,11 @@ public class Book{
     public void setISBNnoOfBook(String ISBNnoOfBook) {
         this.ISBNnoOfBook = ISBNnoOfBook;
     }
+
+    public String toString(){
+        return "BookName:"+" "this.BookName + "\n" +"Authour of Book:"+" "this.BookAuthour()
+            + "\n" + "ISBN code of the Book"+ " +this.ISBNnoOfBook" + ".";
+    }
 }
 
 

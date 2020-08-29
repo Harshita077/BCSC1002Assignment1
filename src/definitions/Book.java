@@ -19,5 +19,11 @@ public class Book{
         this.BookAuthour="Ruskin Bond";
         this.ISBNnoOfBook="45865250200021";
     }
+
+    public Book(String BookName,String BookAuthour,String ISBNnoOfBook){
+        this.BookName=BookName;
+        this.BookAuthour=BookAuthour;
+        this.ISBNnoOfBook=ISBNnoOfBook;
+    }
 }
 

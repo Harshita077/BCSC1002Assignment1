@@ -26,8 +26,13 @@ public class Book {
 
     }
 
-    // GETTER METHOD FOR THE FIELDS
     public String getBookName(){
         return BookName;
     }
+    public void setBookName(String BookName){
+        this.BookName=BookName;
+    }
+
+    public String
 }
+

@@ -25,5 +25,30 @@ public class Book{
         this.BookAuthour=BookAuthour;
         this.ISBNnoOfBook=ISBNnoOfBook;
     }
+
+    public String getBookName() {
+        return BookName;
+    }
+
+    public void setBookName(String BookName) {
+        this.BookName=BookName;
+    }
+
+    public String getBookAuthour() {
+        return BookAuthour;
+    }
+
+    public void setBookAuthour(String bookAuthour) {
+        this.BookAuthour = bookAuthour;
+    }
+
+    public String getISBNnoOfBook() {
+        return ISBNnoOfBook;
+    }
+
+    public void setISBNnoOfBook(String ISBNnoOfBook) {
+        this.ISBNnoOfBook = ISBNnoOfBook;
+    }
 }
+
 

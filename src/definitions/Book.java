@@ -62,13 +62,19 @@ public class Book{
         System.out.println(" Thank you for returning the book");
 
     }
+
     @Override
-    public boolean equals(Object o){
-        if (this == o) return  true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Book book =(Book) o;
-        return Objects.equals(getBookName(),book.getBookName()) && Objects.equals(getbookAuthor(),book.getbookAuthor()) && Objects.equals(getiSBNnoOfBook(),book.getiSBNnoOfBook());
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Book)) return false;
+        Book book = (Book) o;
+        return Objects.equals(getBookName(), book.getBookName()) &&
+                Objects.equals(bookAuthor, book.bookAuthor) &&
+                Objects.equals(getiSBNnoOfBook(), book.getiSBNnoOfBook());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getBookName(), bookAuthor, getiSBNnoOfBook());
     }
 }
-
-

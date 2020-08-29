@@ -53,6 +53,22 @@ public class Book{
     public String toString(){
         return "BookName:"+" " + this.bookName  +  "\n" + "Author of Book:" + " "+ getbookAuthor() + "\n" + "ISBN code of the Book" + " "+ this.iSBNnoOfBook + ".";
     }
+
+    public void doCheckout(){
+        System.out.println("Thank you for reading the Book");
+    }
+
+    public void doReturn(){
+        System.out.println(" Thank you for returning the book");
+
+    }
+    @Override
+    public boolean equals(Object o){
+        if (this == o) return  true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Book book =(Book) o;
+        return Objects.equals(getBookName(),book.getBookName()) && Objects.equals(getbookAuthor(),book.getbookAuthor()) && Objects.equals(getiSBNnoOfBook(),book.getiSBNnoOfBook());
+    }
 }
 
 

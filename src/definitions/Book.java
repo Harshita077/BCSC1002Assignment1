@@ -14,4 +14,10 @@ public class Book{
     private String BookAuthour;
     private String ISBNnoOfBook;
 
+    public Book(){
+        this.BookName="The Blue Umbrella";
+        this.BookAuthour="Ruskin Bond";
+        this.ISBNnoOfBook="45865250200021";
+    }
 }
+

@@ -6,5 +6,10 @@
  * */
 package definitions;
 
+import java.util.Arrays;
+import java.util.Objects;
+
 public class Library {
+    private Book[] currentlyAvailableBooks;
+
 }
